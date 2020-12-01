@@ -2,7 +2,7 @@ header{
  
   background-color: blue;
 }
-h1 {
+h1{
 text-align: center;
 font-size: 3em;
 color: black;
@@ -10,7 +10,49 @@ padding: 20px;
 border: medium solid gray;
 margin: auto;
 }
-body {
+body{
   width: 75%;
   margin:auto;
+}
+h2{
+  text-align: right;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 2em;
+  background-color: rgb(156, 156, 202);
+  padding: 10px;
+
+}
+p{
+  padding: 5px;
+  background-color: purple;
+  color: wheat;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+ul{
+font-family: monospace;
+background-color: black;
+color:white;
+
+}
+li{
+  padding: 2px;
+}
+
+div{
+padding: 1px;
+font-family: fantasy;
+}
+footer{
+  display: block;
+    text-align: center;
+}
+img{
+  position: fixed;
+display: block;
+bottom: 0;
+padding: 20px;
+  margin-left: auto;
+  height: 200px;
+  width: 200px;
 }
