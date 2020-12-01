@@ -1,0 +1,16 @@
+header{
+ 
+  background-color: blue;
+}
+h1 {
+text-align: center;
+font-size: 3em;
+color: black;
+padding: 20px;
+border: medium solid gray;
+margin: auto;
+}
+body {
+  width: 75%;
+  margin:auto;
+}
