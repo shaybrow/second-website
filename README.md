@@ -12,6 +12,8 @@ I built an web site for users to learn more about me.
 
 * [I borrowed this readme template from] (https://github.com/codefellows/seattle-201d70/blob/master/class-02/README-template.md)
 
+* [Random number help](https://www.w3schools.com/js/js_random.asp)
+
 ### Reflections and Comments
 
 I felt confident completing this entire assignment with the exception of the stretch goals. 
@@ -21,4 +23,3 @@ I know I still have a long way to go to be able to flawlessly implement logic an
 It took me about 2.5 hours to complete this project and I know a few weeks ago it would have taken much longer. I'm confident that given this same assignment again I could complete it in less than 2 hours.
 
 ### Collaborators
-
