@@ -25,3 +25,5 @@ I know I still have a long way to go to be able to flawlessly implement logic an
 It took me about 2.5 hours to complete this project and I know a few weeks ago it would have taken much longer. I'm confident that given this same assignment again I could complete it in less than 2 hours.
 
 ### Collaborators
+
+Partnered with Stephen for pair programming. Thanks Stephen!
