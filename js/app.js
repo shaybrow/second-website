@@ -1,23 +1,30 @@
 'use strict';
 
-let userName = prompt('Hi there! Thanks for checking out my about me website. What is your name?');
-alert('Nice to meetcha ' + userName + '! Welcome.');
-
+let userName = "Bob";
 let correct = 0;
-let ask1 = prompt('Am I a Canadian citizen?(yes or y or no or n)');
-ask1.toLowerCase();
-if (ask1 === 'y' || ask1 === 'yes') {
-  // console.log('Nice!');
-  correct++;
-  alert('Nice! I\'ve never lived there but I hope to someday.');
-} else if (ask1 === 'n' || ask1 === 'no') {
-  // console.log('Oof. That is not quite right.');
-  alert('Oof, That\'s not quite right. I\'m in fact a Canadian citizen.');
-} else {
-  // console.log('Ooh ' + ask1 + 'is an invalid answer');
-  alert('Ooh ' + ask1 + ' is an invalid answer');
+
+function askUserName() {
+  userName = prompt('Hi there! Thanks for checking out my about me website. What is your name?');
+  alert('Nice to meetcha ' + userName + '! Welcome.');
 }
 
+function askCad() {
+  let ask1 = prompt('Am I a Canadian citizen?(yes or y or no or n)');
+  ask1.toLowerCase();
+  if (ask1 === 'y' || ask1 === 'yes') {
+    // console.log('Nice!');
+    correct++;
+    alert('Nice! I\'ve never lived there but I hope to someday.');
+  } else if (ask1 === 'n' || ask1 === 'no') {
+    // console.log('Oof. That is not quite right.');
+    alert('Oof, That\'s not quite right. I\'m in fact a Canadian citizen.');
+  } else {
+    // console.log('Ooh ' + ask1 + 'is an invalid answer');
+    alert('Ooh ' + ask1 + ' is an invalid answer');
+  }
+}
+
+function askUS() {
 let ask2 = prompt('Am I an American citizen?(yes or y or no or n)');
 ask2.toLowerCase();
 if (ask2 === 'y' || ask2 === 'yes') {
@@ -31,7 +38,9 @@ if (ask2 === 'y' || ask2 === 'yes') {
   // console.log('Ooh ' + ask2 + 'is an invalid answer');
   alert('Ooh ' + ask2 + ' is an invalid answer');
 }
+}
 
+function askAge() {
 let ask3 = prompt('Am I 25?(yes or y or no or n)');
 ask3.toLowerCase();
 if (ask3 === 'y' || ask3 === 'yes') {
@@ -45,7 +54,9 @@ if (ask3 === 'y' || ask3 === 'yes') {
   // console.log('Ooh ' + ask3 + 'is an invalid answer');
   alert('Ooh ' + ask3 + ' is an invalid answer');
 }
+}
 
+function askRead() {
 let ask4 = prompt('Do I hate to read?(yes or y or no or n)');
 ask4.toLowerCase();
 if (ask4 === 'n' || ask4 === 'no') {
@@ -59,8 +70,10 @@ if (ask4 === 'n' || ask4 === 'no') {
   // console.log('Ooh ' + ask4 + 'is an invalid answer');
   alert('Ooh ' + ask4 + ' is an invalid answer');
 }
+}
 
-let ask5 = prompt('Do I live in Bellingham?(yes or y or no or n)');
+function askLive() {
+let ask5 = prompt('Do I live in Bellingham? (yes or y or no or n)');
 ask5.toLowerCase();
 if (ask5 === 'y' || ask5 === 'yes') {
   alert('Nice! I do live in Bellingham.');
@@ -73,10 +86,12 @@ if (ask5 === 'y' || ask5 === 'yes') {
   // console.log('Ooh ' + ask5 + 'is an invalid answer');
   alert('Ooh ' + ask5 + ' is an invalid answer');
 }
+}
 
+function guessNumber() {
 let z = 4;
 let answer = Math.floor(Math.random() * 10 + 1);
-// console.log(answer);
+console.log(answer);
 let ask8 = prompt('Guess a number between 1-10. You get 4 guesses');
 ask8 = Number(ask8);
 while (z !== 1 && ask8 !== answer) {
@@ -94,12 +109,15 @@ while (z !== 1 && ask8 !== answer) {
   ask8 = prompt('Guess again. You\'ve got ' + z + ' guesses remaining');
 
 }
-if (ask8 === answer) {
+if (Number(ask8) === answer) {
   alert('Very nice, you got it right!');
   correct++;
 } else {
-  alert('Nice try, the correct answer was' + answer);
+  alert('Nice try, the correct answer was ' + answer);
 }
+}
+
+function guessBook() {
 let books = ['first law', 'malazan book of the fallen', 'tower of babel'];
 let ask7 = prompt('Guess one of my top 3 book series (no author)').toLowerCase();
 let j = 6;
@@ -139,4 +157,17 @@ if (bookRight === true) {
 for (var x = 0; x < books.length; x++) {
   alert(`I enjoy ${books[x]} quite a bit`);
 }
+}
+
+askUserName();
+askCad();
+askUS();
+askLive();
+askAge();
+askRead();
+guessNumber();
+guessBook();
+
+
+
 alert('Thanks for playing. You got ' + correct + ' questions correct!');
