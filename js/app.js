@@ -107,19 +107,24 @@ let bookRight = false;
 while (j !== 1) {
   ask7.toLowerCase();
   // console.log(ask7);
-  if (ask7 === books[0]) {
-    alert('Nice! I love First Law');
-    bookRight = true;
-    break;
+  for (var q = 0; q < books.length; q++) {
+    if (ask7 === books[q]) {
+      alert(`Nice! I love ${books[q]}!`);
+      bookRight = true;
+      break;
+    }
   }
-  if (ask7 === books[1]) {
-    alert('Nice! I love MBotF');
-    bookRight = true;
-    break;
-  }
-  if (ask7 === books[2]) {
-    alert('Nice! I love Tower of Babel');
-    bookRight = true;
+  // if (ask7 === books[1]) {
+  //   alert('Nice! I love MBotF');
+  //   bookRight = true;
+  //   break;
+  // }
+  // if (ask7 === books[2]) {
+  //   alert('Nice! I love Tower of Babel');
+  //   bookRight = true;
+  //   break;
+  // }
+  if (bookRight === true) {
     break;
   }
   j--;
